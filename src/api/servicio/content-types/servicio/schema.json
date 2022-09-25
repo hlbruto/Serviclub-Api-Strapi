@@ -15,16 +15,23 @@
     "servicio": {
       "type": "string"
     },
+    "casa": {
+      "type": "boolean"
+    },
+    "red": {
+      "type": "boolean"
+    },
+    "instalacion": {
+      "type": "boolean"
+    },
     "foto": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "type": "text"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "Precio": {
+      "type": "string"
     }
   }
 }

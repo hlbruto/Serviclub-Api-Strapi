@@ -14,6 +14,15 @@
   "attributes": {
     "nombre": {
       "type": "string"
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "Pendiente de pago",
+        "Cancelado",
+        "Asignado",
+        "Completado"
+      ]
     }
   }
 }

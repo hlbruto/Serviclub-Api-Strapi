@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nombre": {
-      "type": "string"
-    },
     "estado": {
       "type": "enumeration",
       "enum": [
@@ -23,6 +20,33 @@
         "Asignado",
         "Completado"
       ]
+    },
+    "momento": {
+      "type": "text"
+    },
+    "problema": {
+      "type": "string"
+    },
+    "servicio": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::servicio.servicio",
+      "inversedBy": "pedido"
+    },
+    "instalacion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::instalacion.instalacion",
+      "mappedBy": "pedido"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "pedido"
+    },
+    "progress": {
+      "type": "integer"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instalacions",
+  "info": {
+    "singularName": "instalacion",
+    "pluralName": "instalacions",
+    "displayName": "Instalacion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "pedido": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pedido.pedido",
+      "inversedBy": "instalacion"
+    },
+    "direccion": {
+      "type": "text"
+    }
+  }
+}

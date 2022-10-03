@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trabajadors",
+  "info": {
+    "singularName": "trabajador",
+    "pluralName": "trabajadors",
+    "displayName": "Trabajador"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "cargo": {
+      "type": "string"
+    }
+  }
+}

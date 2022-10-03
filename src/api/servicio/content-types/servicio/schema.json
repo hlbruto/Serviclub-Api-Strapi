@@ -30,8 +30,14 @@
     "descripcion": {
       "type": "text"
     },
-    "Precio": {
+    "precio": {
       "type": "string"
+    },
+    "pedido": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pedido.pedido",
+      "mappedBy": "servicio"
     }
   }
 }
